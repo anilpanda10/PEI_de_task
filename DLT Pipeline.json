@@ -1,0 +1,34 @@
+{
+    "id": "afc6caa8-a853-49fc-88c0-256307400bca",
+    "pipeline_type": "WORKSPACE",
+    "development": true,
+    "continuous": false,
+    "channel": "CURRENT",
+    "photon": true,
+    "libraries": [
+        {
+            "notebook": {
+                "path": "/Users/anil_panda@epam.com/de_task_data_pipeline/raw.py"
+            }
+        },
+        {
+            "file": {
+                "path": "/Users/anil_panda@epam.com/de_task_data_pipeline/euh.py"
+            }
+        },
+        {
+            "notebook": {
+                "path": "/Users/anil_panda@epam.com/de_task_data_pipeline/eh.py"
+            }
+        },
+        {
+            "notebook": {
+                "path": "/Users/anil_panda@epam.com/de_task_data_pipeline/install_requirements.py"
+            }
+        }
+    ],
+    "name": "de_task_ingestion",
+    "serverless": true,
+    "catalog": "az_eus_adb_sandbox",
+    "schema": "de_task"
+}
