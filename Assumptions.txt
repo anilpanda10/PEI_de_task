@@ -1,0 +1,8 @@
+Assumptions:
+
+1) Customer.xlsx is provided as a parquet file instead of xlsx. For this the conversion of xlsx to parquet must be done before DLT pipeline picks up data from landing folder. May be we can use separate notebook to convert xlsx to parquet and then start DLT pipeline. The code to convert xlsx to parquet is also provided in repo and for this spark-excel library needs to be installed on the clusters.
+
+2) I have handled the edge case where customers or products might be part of orders dataset but not of customer or products dataset. For this I am first fetching the list of customers/products from orders dataset and then finding out which customer/product is missing from original data and adding these fields to their respective tables. The other fields for these customers/products are updated as "unknown".
+
+3) I have assumed, orders table to not receive any updates for simplicity and it is an append only dataset. FOr customers and products, I have implemented SCD1 data load.
+
