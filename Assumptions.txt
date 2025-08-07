@@ -6,3 +6,4 @@ Assumptions:
 
 3) I have assumed, orders table to not receive any updates for simplicity and it is an append only dataset. FOr customers and products, I have implemented SCD1 data load.
 
+4) I have used DLT framework to process the files from raw to enriched-unharmonized (EUH) and then to enriched-harmonized (EH) layer. EH layer being our reporting layer.
